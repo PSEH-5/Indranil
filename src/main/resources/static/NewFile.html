@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> API</h1>
+
+<script>
+<script type="text/javascript">
+var apiUrl = 'http://localhost:8080/country';
+fetch(apiUrl).then(response => {
+  return response.json();
+}).then(data => {
+  // Work with JSON data here
+  console.log(data);
+}).catch(err => {
+  // Do something for an error here
+});
+</script>
+</script>
+ 
+ 
+  <button>getCountry</button>
+
+<p>Results</p>   
+  <div ></div>
+
+</body>
+</html>
